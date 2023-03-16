@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Dissertation: Trans Safe Space in VR"
+date:   2022-05-20 12:00:00 +0000
+tag: personal
+cover-image: "/assets/games/honours/12.jpg"
+---

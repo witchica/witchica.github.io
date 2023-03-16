@@ -1,0 +1,51 @@
+#content {
+  min-height: calc(100vh - 180px - 300px);
+  margin: 0 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  #content #text-space {
+    width: 60%;
+    padding: 15px; }
+    #content #text-space img {
+      width: 25%; }
+    #content #text-space ul {
+      margin: 5px 25px; }
+    #content #text-space p, #content #text-space ul {
+      line-height: 1.6em; }
+    #content #text-space p {
+      margin-bottom: 15px; }
+  #content #media-space {
+    width: 40%;
+    padding: 15px;
+    text-align: left; }
+    #content #media-space .game-info-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 10px; }
+      #content #media-space .game-info-container .game-info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px; }
+        #content #media-space .game-info-container .game-info .game-info-header {
+          font-weight: bold; }
+    #content #media-space .game-media-header {
+      margin-bottom: 10px; }
+    #content #media-space .game-media img, #content #media-space .game-media iframe {
+      width: 100%;
+      margin-bottom: 15px; }
+
+#header-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px; }
+  #header-image h1, #header-image h2 {
+    text-align: center;
+    color: white; }
+  #header-image h1 {
+    font-size: 4em; }
+
+/*# sourceMappingURL=game.css.map */

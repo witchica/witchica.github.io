@@ -1,0 +1,36 @@
+#introduction {
+  width: 50vw;
+  text-align: center;
+  margin: 90px 25vw; }
+  #introduction p {
+    font-size: 1.4em; }
+
+h1 {
+  text-align: center; }
+
+#content {
+  min-height: calc(100vh - 180px); }
+
+.game-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+  .game-list .game {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 15px;
+    transition: transform 0.1s; }
+    .game-list .game h2 {
+      margin-top: 10px; }
+    .game-list .game img {
+      width: 23vw; }
+  .game-list .game:hover {
+    transform: scale(1.01); }
+
+/*# sourceMappingURL=landing.css.map */

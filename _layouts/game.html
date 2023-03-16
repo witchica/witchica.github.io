@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>witchica - {{page.title}}</title>
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/game.css"/>
+        <link rel="icon" href="/assets/pfp.png"/>
+    </head>
+    {% include header.html %}
+    <body>
+        <div id="header-image" style="background-image: url({{page.cover-image}})">
+        </div>
+        <div id="content">
+            <div id="text-space">
+                <h1>{{page.title}}</h1>
+                <h2>
+                    {% if page.tag == "personal" %} Personal Work {% else %} Professional Work {% endif %}
+                </h2>
+                {{ content }}
+            </div>
+            <div id="media-space">
+                <h2>Project Information</h2>
+                <div class="game-info-container">
+                    {% if page.created %}
+                    <span class="game-info">
+                        <span class="game-info-header">Created On</span>
+                        <span class="game-info-text">{{page.created}}</span>
+                    </span>
+                    {% endif %}
+                    
+                    {% if page.with %}
+                    <span class="game-info">
+                        <span class="game-info-header">Created With</span>
+                        {% if page.with_link %}
+                            <a href="{{page.with_link}}" class="game-info-text">{{page.with}}</a>
+                        {% else %}
+                            <span class="game-info-text">{{page.with}}</span>
+                        {% endif %}
+                    </span>
+                    {% endif %}
+                    
+                    {% if page.for %}
+                    <span class="game-info">
+                        <span class="game-info-header">Created For</span>
+                        {% if page.for_link %}
+                            <a href="{{page.for_link}}" class="game-info-text">{{page.for}}</a>
+                        {% else %}
+                            <span class="game-info-text">{{page.for}}</span>
+                        {% endif %}
+                    </span>
+                    {% endif %}
+
+                    {% if page.play_link %}
+                    <span class="game-info">
+                        <span class="game-info-header">How to play</span>
+                        {% if page.can_play_in_browser %}
+                            <a href="{{page.play_link}}" class="game-info-text">Play here!</a>
+                        {% else %}
+                        <a href="{{page.play_link}}" class="game-info-text">Download here!</a>
+                        {% endif %}
+                    </span>
+                    {% endif %}
+                </div>
+
+                {% if page.photos || page.videos %}
+                <h2 class="game-media-header">Media</h2>
+
+                <div class="game-media">
+                    {% for video in page.videos %}
+                    {{ video }}
+                    {% endfor %}
+                    {% for photo in page.photos %}
+                        <img src="{{photo}}"/>
+                    {% endfor %}
+                </div>
+
+                {% endif %}
+            </div>
+        </div>
+    </body>
+    {% include footer.html %}
+</html>
