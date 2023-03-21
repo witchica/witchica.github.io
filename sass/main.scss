@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import 'variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $regular-font;
+}
+
+h1, h2, h3, h4, h5, h6, footer{
+    font-family: $header-font;
+}
+
+p {
+    font-family: $regular-font;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: $site-background;
+}
+
+#content {
+    min-height: calc(100vh - 180px);
+    position: relative;
+    background-color: $site-background;
+    z-index: 200;
+}
+
+header {
+    height: 100px;
+    background-color: $header-background;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: none;
+    z-index: 0;
+    font-family: $title-font;
+
+    #mobile-navigation-toggle {
+        display: none;
+    }
+
+    .header-centre {
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+
+        .header-image {
+            display: block;
+            width: 180px;
+            height: 100px;
+            background-image: url("/assets/pfp.png");
+            background-size: 180px 180px;
+            background-position: top;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $header-font-color;
+            font-weight: 600;
+            font-size: 2.2em;
+            margin-top: 5px;
+            margin-left: 15px;
+
+            .header-subtext {
+                font-size: 0.4em;
+            }
+        }
+    }
+
+    .header-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            text-align: center;
+            padding: 0 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-decoration: none;
+            color: $header-link-color;
+            cursor: pointer;
+            font-weight: 500;
+            transition: color 0.1s;
+        }
+
+        a:hover {
+            font-weight: 600;
+            color: $header-link-color-hover;
+        }
+    }
+}
+
+footer {
+    background-color: $header-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    height: 80px;
+    color: rgb(130 , 130, 130);
+}
+
+#header-image {
+    margin: 0 0;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 1000px) {
+    header {
+        .header-centre {
+            .header-image {
+                margin-top: 25px;
+                width: 90px;
+                height: 50px;
+                background-size: 90px 90px;
+            }
+
+            .header-text {
+                font-size: 1.5em;
+                margin-left: 5px;
+                .header-subtext {
+                    font-size: 0.5em;
+                }
+            }
+        }
+
+        
+        #mobile-navigation-toggle {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+            cursor: pointer;
+
+            .line {
+                border: 2px solid $text-color;
+                border-radius: 2px;
+                width: 50px;
+                height: 0px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .header-links {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $site-background;
+            z-index: 900;
+
+            a {
+                margin:0;
+                padding: 15px;
+            }
+
+            a:hover {
+                background-color: $header-link-color-hover;
+            }
+        }
+    }
+}

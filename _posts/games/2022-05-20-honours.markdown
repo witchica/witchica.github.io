@@ -1,0 +1,47 @@
+---
+layout: game
+title:  "Dissertation: Trans Safe Space in VR"
+date:   2022-05-20 12:00:00 +0000
+tag: personal
+cover-image: "/assets/games/honours/safe_space.jpg"
+header-image: "/assets/games/honours/11.jpg"
+custom-header-css: "background-position-y: 80%;"
+
+videos: []
+photos: ["/assets/games/honours/1.jpg", "/assets/games/honours/2.jpg", "/assets/games/honours/3.jpg", "/assets/games/honours/4.jpg", "/assets/games/honours/5.jpg", "/assets/games/honours/6.jpg"
+, "/assets/games/honours/7.jpg", "/assets/games/honours/8.jpg", "/assets/games/honours/9.jpg", "/assets/games/honours/10.jpg", "/assets/games/honours/11.jpg", "/assets/games/honours/12.jpg", "/assets/games/honours/13.jpg"]
+photos_alt: ["","","",""]
+
+created: "September 2021 - May 2022"
+created_custom_text: "Created" 
+
+for: "Edinburgh Napier University"
+
+play_custom_text: "Try in Browser"
+play_link: "/webgl/honours-webgl/index.html"
+
+---
+The Gallery of Safe Space was my final project for University. I picked this project as my  Honours proposal as it is a very relevant topic to me personally and I believed that it would contribute knowledge to the wider research space around trans identity. This project brought up a lot of obstacles and took full advantage of my skill-set, it also gave me the chance to explore making a virtual reality experience which was super interesting.
+
+The research stage of this project involved compiling a literature review, including the history of trans representation within media and how that has evolved for the digital age. This involved looking at representation within things like video games and TV shows. My original idea was to specifially investigate trans representation within media. However, I also looked at the usage of virtual reality for mental health and therapy as this was super interesting and has a lot of parrallels with representation within media. This is how the project came to be *How does safe space for transgender youth translate into virtual reality?* as combining these two angles made for a really focused study.
+
+### Designing the process
+For this project, I utilised the *Scottish Approach to Service Design* which involves 4 stages: Discover, Define, Develop, Deliver. This is done in a way that the target audience, trans youth, have a lot of input along the way. They help you discover the problems in the first place, help define what needs to be done about it, have input through development through the use of iteration and finally it is delivered for *them*. This approach was very grounded in the use of Human Centred Design and Trauma Informed Practice.
+
+I also felt very confident in my metholodgy due to being part of the trans community, it can be reassuring to see other studies being conducted in the same safe manner. Taking part as a researcher was interesting and gave me a new perspective on how these studies can be conducted, and how they can be improved.
+
+### Collecting the information
+To gather information for my study, I conducted qualitative workshops using *Tilt Brush*. Participants were tasked with designing a space in which they felt safe using the software. Whilst designing this space, a non-structured interview was done to gather insight into what they were creating and why it felt safe for them. This approach was inspired by the Rich Pictures technique, modified to be in virtual reality.
+
+### Developing a prototype
+The final delivery for this project shifted a lot throughout, with the final decision being made to created a 'Gallery of Safe Space' from the models collected within the colleciton stage. Some other ideas where to model out the spaces to a higher fidelity or create some sort of prototype therapy application. However, displaying the information gathered with quotes and music to match the feelings displayed from the creations was the best approach in the end. During this stage the prototype was also given to the original participants to allow changes to be made along the way.
+
+### The results
+The final part of this project took the form of an evaluation. In this evaluation, I took the final product back to users and conducted a think aloud session whilst observing them in the VR experience. In this session, the participant can freely explore the project and give any thoughts and feedback. This allowed me to define what worked well and what could have been done better. This formed the basis of my evaluative data gathering. Alongside this, the data gathered in the original workshops was used to back up this data and form conclusions.
+
+Overall, the project was a success and gave a very good insight into what aspects of safe space are important. The representation given by the final experience was praised by participants and it was apparent that VR safe spaces and evoke the same feelings as a real-world safe space. The final experience encapsulated these feelings in an easy to use demo, this allowed others to explore these spaces, see the feelings that are connected to safe space and understand what was researched. 
+
+Future uses for experiences like this are really interesting, such as the use of VR safe spaces in countries where being LGBTQ+ is unsafe - whether due to law or culture. The world is in a state right now where something like this could have serious potential to safeguard LGBTQ+ youth whilst still providing support. There are endless possibilities for this project and I'd love to take it further in the future, however, for now it is on the backburner whilst I get more experience in industry and explore what I would like do with my career.
+
+### Media
+There is a wide range of images from the study on this page, feel free to take a look! There is also a link at the top to try the experience in browser, this only works on desktop at the moment though.

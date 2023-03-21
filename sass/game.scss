@@ -1,0 +1,183 @@
+@import 'variables.scss';
+
+#back-link {
+    display: block;
+    margin: 0 15vw;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+#content {
+    min-height: calc(100vh - 180px - 300px);
+
+    margin: 0 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    .content-title, .content-subtitle {
+        margin-left: 15px;
+    }
+
+    #information-space {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        
+        #text-space {
+            width: 60%;
+            padding: 15px;
+
+            img {
+                width: 25%;
+            }
+
+            ul {
+                margin: 5px 25px;
+            }
+            
+            p, ul {
+            line-height: 1.6em;
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        #media-space {
+            width: 40%;
+            padding: 15px;
+            text-align: left;
+
+            .game-info-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 10px;
+
+                .game-info {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+        
+                    .game-info-header {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .game-media-header {
+                margin-bottom: 10px;
+            }
+
+            .game-media {
+                img, iframe {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+#projects-list {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#header-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+
+    h1, h2 {
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+}
+
+#image-enlarge {
+    display: block;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+
+    background-color: rgba(55,55,55,0.7);
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #image-enlarge-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #image-enlarge-close {
+            position: relative;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+
+        img {
+            margin-left: 10vw;
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    #content {
+        margin: 0 7.5vw;
+    }
+
+    #back-link {
+        margin: 0 7.5vw;
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #content {
+        margin: 0 0;
+
+        #information-space {
+            flex-direction: column;
+            width: 100%;
+
+            #text-space {
+                width: 100%;
+            }
+
+            #media-space {
+                width: 100%;
+            }
+        }
+    }
+
+    #back-link {
+        margin: 0 0vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+}

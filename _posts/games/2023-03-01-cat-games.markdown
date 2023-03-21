@@ -1,0 +1,39 @@
+---
+layout: game
+title:  "MiniJam 127: Cat Games"
+date:   2023-02-06 12:39:09 +0000
+tag: personal
+
+cover-image: "/assets/games/catjam/0.jpg"
+videos: ['<iframe width="560" height="315" src="https://www.youtube.com/embed/1jgqKMXVBRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>']
+photos: ["/assets/games/catjam/0.jpg", "/assets/games/catjam/1.jpg", "/assets/games/catjam/2.jpg", "/assets/games/catjam/3.jpg"]
+photos_alt: ["","","",""]
+
+created: "4th March 2023"
+
+with: SoupArt_
+with_link: https://twitter.com/Soupp_Art_
+
+for: "MiniJam 127: Cats"
+for_link: https://itch.io/jam/mini-jam-127-cats
+
+play_custom_text: "itch.io"
+play_link: "https://witchica.itch.io/cat-games"
+
+---
+Cat Games was our project for the 127th MiniJam! Me and SoupArt have worked on game jams together previously but this was our first attempt at doing a 3D game for one! We started off by planning around the theme and limitation of the jam! The game had to be cat themed, with there being a limitation on the colour palette you could use within your game.
+
+![MiniJam Colour Pallete](https://img.itch.zone/aW1nLzExNDc5MzQ1LnBuZw==/original/5z6dtt.png)
+
+This colour palette inspired us to make a set of colour themed mini games for our little cat to complete! We had planned on having 3 or 4 little game modes within the game! Our ideas were:
+ - Stand on the right colour! This one is what ended up making it in
+ - Guess the colour! This would have utilised little levers to manipulate RGB channels to try and correctly guess a colour
+ - Dress up! A random colour from the palette is picked and you have to dress the cat in the most matching clothing items!
+ - Rearrange Colours! Rearrange coloured blocks to make the correct gradient!
+ - Match 3! Little cards with cute cat designs based around the colour theme that you have to match up!
+
+Unfortunately due to some overscoping and PC issues mid-jam, we had to reconsider the final product and only incorporated one of the game modes! We ended up having the stand on colour game mode finished for the end of the jam. This game mode is formed of a 15x15 tile board, the colours get randomized and when the timer runs out the ones that are NOT the correct colour all sink to reveal the lava! We made a little in game board which shows the colour you need to stand on, how long until the other tiles sink and how many points you have!
+
+In the images you can see that the cat is wearing a little pride cape, SoupArt made lots of assets for a character customizer that we unfortunately couldn't implement as we ran out of time! This was a really fun idea and the assets all turned out looking really good. I want to try and implement it in the near future to make use of all of the cute outfits!
+
+Overall the game ended up playing super fun and after tweaking the timer lengths inbetween rounds it can become quite hard as time goes on. This was my first attempt at creating a whole game jam project in Unreal Engine as I usually go for Unity. It was a really fun experience getting to use it outside of work for something new! After the jam finished I added some little improvements, such as making it easier to tell which colour you are meant to be standing on and making it easier to score points. It was a super fun project and I always enjoy working with someone else as it can bring out so many fun ideas. SoupArt done an amazing job on modelling, rigging and texturing the little cat character and bringing it all into engine. We had a really fun time and will definitely do more MiniJams in the future! 

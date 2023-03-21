@@ -1,0 +1,32 @@
+---
+layout: game
+title:  "MiniJam 105: Dream Dungeons"
+date:   2022-03-29 12:39:09 +0000
+tag: personal
+
+cover-image: "/assets/games/dreamjam/1.jpg"
+videos: []
+photos: ["/assets/games/dreamjam/1.jpg", "/assets/games/dreamjam/2.jpg", "/assets/games/dreamjam/3.jpg", "/assets/games/dreamjam/4.jpg", "/assets/games/dreamjam/5.jpg", "/assets/games/dreamjam/6.jpg"]
+photos_alt: ["","","",""]
+
+created: "29th March 2022"
+
+with: SoupArt_
+with_link: https://twitter.com/Soupp_Art_
+
+for: "MiniJam 105: Dreamy"
+for_link: https://itch.io/jam/mini-jam-105-dreamy
+
+play_custom_text: "itch.io"
+play_link: "https://witchica.itch.io/dream-dungeons"
+
+---
+Dream Dungeons was our project for the 105th MiniJam! This was me and SoupArt's first game jam together! We started off by planning around the limitation of 'Each Playthrough is Unique.' Our first thought was to have randomly generated levels! These ended up taking the form of dungeons. Our game ended up being a rogue-like based on a childs nightmares! You play as a teddy bear who must defeat nightmare creatures to win! The monsters are based on common childhood fears such as clowns, monsters under the bed and spiders!
+
+During this project a lot of my time was spent creating the system to create randomized levels with dungeons that have a path that is actually completable. The assets created to go along with this ended up making the dungeons look really cool and made it very easy to implement using Unitys tilemap system once I figured out the path generation. I would have loved to make the dungeons more random in shape rather than always being rectangular, however this was not in the scope of the project at the time. In hindsight it would have been really interesting to use a wave function collapse implementation to create more interesting dungeons!
+
+Mechanics wise, you have to shoot at the enemies to turn them friendly. The teddy has unlimited shooting power and a health of 20, if you run out of health you have to start the level over! Each level had a theme with a set of colours, a sound track and different enemies. Once you defeat all of the enemies the soundtrack turns to a 'nice' version of itself and you can move on to the next room. The final level in all of the dungeons featured a 'boss' version of one of these characters which had more health. Once you complete a level, you are awarded points which can be used in the character customiser! It is crazy to me that we managed to implement a whole character customiser in the time limit of the jam but I was determined to create it from the start!
+
+Overall the game played really nicely and was well received within the jam, we got a lot of great feedback which can help us prepare better for future projects. The main issue reported was the audio levels, which is something that I would have loved to have controls for within the game. There is definitely things I would do differently if I was doing this over but I am so impressed at how much we got done in the time limit! This was a super fun project and got us started participating in game jams, it was also a nice distraction from my dissertation at the time!
+
+**The game is available to play in browser on itch.io**
