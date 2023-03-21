@@ -17,7 +17,7 @@ with_link: https://twitter.com/Soupp_Art_
 for: "MiniJam 127: Cats"
 for_link: https://itch.io/jam/mini-jam-127-cats
 
-play_in_browser: false
+play_custom_text: "itch.io"
 play_link: "https://witchica.itch.io/cat-games"
 
 ---

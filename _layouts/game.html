@@ -8,8 +8,13 @@
     </head>
     {% include header.html %}
     <body>
-        <div id="header-image" style="background-image: url({{page.cover-image}})">
+        {% if page.header-image %}
+        <div id="header-image" style="background-image: url({{page.header-image}}); {{page.custom-header-css}}">
+        {% else %}
+        <div id="header-image" style="background-image: url({{page.cover-image}}); {{page.custom-header-css}}">
+        {% endif %}
         </div>
+        <a href="/index.html" id="back-link">Return to Homepage</a>
         <div id="content">
             <div id="text-space">
                 <h1>{{page.title}}</h1>
@@ -23,8 +28,28 @@
                 <div class="game-info-container">
                     {% if page.created %}
                     <span class="game-info">
-                        <span class="game-info-header">Created On</span>
+                        <span class="game-info-header">
+                            {% if page.created_custom_text %}
+                                {{page.created_custom_text}}
+                            {% else %}
+                                Created On
+                            {% endif %}
+                        </span>
                         <span class="game-info-text">{{page.created}}</span>
+                    </span>
+                    {% endif %}
+
+                    {% if page.developer %}
+                    <span class="game-info">
+                        <span class="game-info-header">Developer</span>
+                        <span class="game-info-text">{{page.developer}}</span>
+                    </span>
+                    {% endif %}
+
+                    {% if page.role %}
+                    <span class="game-info">
+                        <span class="game-info-header">Role</span>
+                        <span class="game-info-text">{{page.role}}</span>
                     </span>
                     {% endif %}
                     
@@ -52,15 +77,28 @@
 
                     {% if page.play_link %}
                     <span class="game-info">
-                        <span class="game-info-header">How to play</span>
-                        {% if page.can_play_in_browser %}
-                            <a href="{{page.play_link}}" class="game-info-text">Play here!</a>
+                        <span class="game-info-header">Download</span>
+                        {% if page.play_custom_text %}
+                            <a href="{{page.play_link}}" class="game-info-text">{{page.play_custom_text}}</a>
                         {% else %}
                         <a href="{{page.play_link}}" class="game-info-text">Download here!</a>
                         {% endif %}
                     </span>
                     {% endif %}
                 </div>
+
+                {% if page.projects %}
+                <h2>Projects worked on</h2>
+                <ul id="projects-list">
+                    {% for project in page.projects %}
+                        {% if project.link %}
+                            <li><a href="{{project.link}}">{{project.name}}</a></li>
+                        {% else %}
+                            <li>{{project.name}}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
 
                 {% if page.photos || page.videos %}
                 <h2 class="game-media-header">Media</h2>
@@ -78,5 +116,11 @@
             </div>
         </div>
     </body>
+    <!-- <div id="image-enlarge">
+        <div id="image-enlarge-container">
+            <span id="image-enlarge-close">X</span>
+            <img src="/assets/games/catjam/0.jpg"/>
+        </div>
+    </div> -->
     {% include footer.html %}
 </html>
