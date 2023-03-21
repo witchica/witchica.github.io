@@ -1,0 +1,52 @@
+@import 'variables.scss';
+
+#back-link {
+    display: block;
+    margin: 0 15vw;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+#header-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+
+    h1, h2 {
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+}
+
+
+#content {
+    min-height: calc(100vh - 180px - 300px);
+
+    margin: 0 15vw;
+    padding: 15px;
+}
+
+#about-cards {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .about-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+    
+        img {
+            width: 50%;
+        }
+    }
+
+    .about-card:nth-child(even) {
+        justify-content: flex-end;
+    }
+}

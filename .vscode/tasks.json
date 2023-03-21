@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "bundler exec jekyll serve",
+            "group": "build",
+            "label": "Jekyll Serve",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "type": "shell",
+            "command": "sass --watch sass:css",
+            "group": "build",
+            "label": "SASS Build",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
