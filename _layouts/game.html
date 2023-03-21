@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>witchica - {{page.title}}</title>
+        <title>{{site.title}} - {{page.title}}</title>
         <link rel="stylesheet" href="/css/main.css"/>
         <link rel="stylesheet" href="/css/game.css"/>
         <link rel="icon" href="/assets/pfp.png"/>
+        {% include components/meta_tags.html %}
     </head>
     {% include header.html %}
     <body>
@@ -16,103 +17,105 @@
         </div>
         <a href="/index.html" id="back-link">Return to Homepage</a>
         <div id="content">
-            <div id="text-space">
-                <h1>{{page.title}}</h1>
-                <h2>
-                    {% if page.tag == "personal" %} Personal Work {% else %} Professional Work {% endif %}
-                </h2>
-                {{ content }}
-            </div>
-            <div id="media-space">
-                <h2>Project Information</h2>
-                <div class="game-info-container">
-                    {% if page.created %}
-                    <span class="game-info">
-                        <span class="game-info-header">
-                            {% if page.created_custom_text %}
-                                {{page.created_custom_text}}
+            <h1 class="content-title">{{page.title}}</h1>
+            <h2 class="content-subtitle">
+                {% if page.tag == "personal" %} Personal Work {% else %} Professional Work {% endif %}
+            </h2>
+            <div id="information-space">
+                <div id="text-space">
+                    {{ content }}
+                </div>
+                <div id="media-space">
+                    <h2>Project Information</h2>
+                    <div class="game-info-container">
+                        {% if page.created %}
+                        <span class="game-info">
+                            <span class="game-info-header">
+                                {% if page.created_custom_text %}
+                                    {{page.created_custom_text}}
+                                {% else %}
+                                    Created On
+                                {% endif %}
+                            </span>
+                            <span class="game-info-text">{{page.created}}</span>
+                        </span>
+                        {% endif %}
+
+                        {% if page.developer %}
+                        <span class="game-info">
+                            <span class="game-info-header">Developer</span>
+                            <span class="game-info-text">{{page.developer}}</span>
+                        </span>
+                        {% endif %}
+
+                        {% if page.role %}
+                        <span class="game-info">
+                            <span class="game-info-header">Role</span>
+                            <span class="game-info-text">{{page.role}}</span>
+                        </span>
+                        {% endif %}
+                        
+                        {% if page.with %}
+                        <span class="game-info">
+                            <span class="game-info-header">Created With</span>
+                            {% if page.with_link %}
+                                <a href="{{page.with_link}}" class="game-info-text">{{page.with}}</a>
                             {% else %}
-                                Created On
+                                <span class="game-info-text">{{page.with}}</span>
                             {% endif %}
                         </span>
-                        <span class="game-info-text">{{page.created}}</span>
-                    </span>
+                        {% endif %}
+                        
+                        {% if page.for %}
+                        <span class="game-info">
+                            <span class="game-info-header">Created For</span>
+                            {% if page.for_link %}
+                                <a href="{{page.for_link}}" class="game-info-text">{{page.for}}</a>
+                            {% else %}
+                                <span class="game-info-text">{{page.for}}</span>
+                            {% endif %}
+                        </span>
+                        {% endif %}
+
+                        {% if page.play_link %}
+                        <span class="game-info">
+                            <span class="game-info-header">Download</span>
+                            {% if page.play_custom_text %}
+                                <a href="{{page.play_link}}" class="game-info-text">{{page.play_custom_text}}</a>
+                            {% else %}
+                            <a href="{{page.play_link}}" class="game-info-text">Download here!</a>
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    {% if page.projects %}
+                    <h2>Projects worked on</h2>
+                    <ul id="projects-list">
+                        {% for project in page.projects %}
+                            {% if project.link %}
+                                <li><a href="{{project.link}}">{{project.name}}</a></li>
+                            {% else %}
+                                <li>{{project.name}}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
                     {% endif %}
 
-                    {% if page.developer %}
-                    <span class="game-info">
-                        <span class="game-info-header">Developer</span>
-                        <span class="game-info-text">{{page.developer}}</span>
-                    </span>
-                    {% endif %}
+                    {% if page.photos || page.videos %}
+                    <h2 class="game-media-header">Media</h2>
 
-                    {% if page.role %}
-                    <span class="game-info">
-                        <span class="game-info-header">Role</span>
-                        <span class="game-info-text">{{page.role}}</span>
-                    </span>
-                    {% endif %}
-                    
-                    {% if page.with %}
-                    <span class="game-info">
-                        <span class="game-info-header">Created With</span>
-                        {% if page.with_link %}
-                            <a href="{{page.with_link}}" class="game-info-text">{{page.with}}</a>
-                        {% else %}
-                            <span class="game-info-text">{{page.with}}</span>
-                        {% endif %}
-                    </span>
-                    {% endif %}
-                    
-                    {% if page.for %}
-                    <span class="game-info">
-                        <span class="game-info-header">Created For</span>
-                        {% if page.for_link %}
-                            <a href="{{page.for_link}}" class="game-info-text">{{page.for}}</a>
-                        {% else %}
-                            <span class="game-info-text">{{page.for}}</span>
-                        {% endif %}
-                    </span>
-                    {% endif %}
+                    <div class="game-media">
+                        {% for video in page.videos %}
+                        {{ video }}
+                        {% endfor %}
+                        {% for photo in page.photos %}
+                            <img src="{{photo}}"/>
+                        {% endfor %}
+                    </div>
 
-                    {% if page.play_link %}
-                    <span class="game-info">
-                        <span class="game-info-header">Download</span>
-                        {% if page.play_custom_text %}
-                            <a href="{{page.play_link}}" class="game-info-text">{{page.play_custom_text}}</a>
-                        {% else %}
-                        <a href="{{page.play_link}}" class="game-info-text">Download here!</a>
-                        {% endif %}
-                    </span>
                     {% endif %}
                 </div>
-
-                {% if page.projects %}
-                <h2>Projects worked on</h2>
-                <ul id="projects-list">
-                    {% for project in page.projects %}
-                        {% if project.link %}
-                            <li><a href="{{project.link}}">{{project.name}}</a></li>
-                        {% else %}
-                            <li>{{project.name}}</li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                {% endif %}
-
-                {% if page.photos || page.videos %}
-                <h2 class="game-media-header">Media</h2>
-
-                <div class="game-media">
-                    {% for video in page.videos %}
-                    {{ video }}
-                    {% endfor %}
-                    {% for photo in page.photos %}
-                        <img src="{{photo}}"/>
-                    {% endfor %}
-                </div>
-
-                {% endif %}
             </div>
         </div>
     </body>

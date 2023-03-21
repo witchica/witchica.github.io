@@ -12,6 +12,32 @@
     p {
         font-size: 1.4em;
     }
+
+    #contact {
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .social {
+                display: flex;
+                flex-direction: row;
+                margin: 15px 50px;
+                margin-bottom: 0;
+                color: $text-color;
+
+                img {
+                    width: 70px;
+                }
+                .social-name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
 }
 
 h1 {
@@ -50,5 +76,68 @@ h1 {
 
     .game:hover {
         transform: scale(1.01);
+    }
+}
+
+@media(max-width: 1600px) {
+    #introduction {
+        width: 80vw;
+        margin: 90px 10vw;
+    }
+
+    .game-list {
+        .game {
+            img {
+                width: 40vw;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+
+    #header-image {
+        min-height: 300px;
+    }
+    
+    #introduction {
+        width: 95vw;
+        margin: 30px 2.5vw;
+
+        #contact {
+            margin-top: 15px;
+            .socials {
+                display: flex;
+                flex-direction: column;
+    
+                .social {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 15px 50px;
+                    margin-bottom: 0;
+                    color: $text-color;
+    
+                    img {
+                        width: 70px;
+                    }
+                    .social-name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+           
+    }
+
+    .game-list {
+        .game {
+            img {
+                width: 90vw;
+            }
+        }
     }
 }

@@ -18,7 +18,7 @@ play_custom_text: "Available on CurseForge"
 play_link: "https://www.curseforge.com/members/jessicastrongg/projects"
 
 ---
-I have been modding Minecraft for nearly 10 years now! It was originally how I got into programming, and certainly doesn't feel like that long ago! I started off with basic mods, learning from YouTube tutorials and basically mimicing them until I got a good understanding of how things actually worked.
+I have been modding Minecraft for nearly 10 years now! It was originally how I got into programming, and certainly doesn't feel like that long ago! I started off with basic mods, learning from YouTube tutorials and basically mimicing them until I got a good understanding of how things actually worked. In that time I have amassed over 11 million downloads across my mods, crazy right!
 
 ![My first mod](/assets/about/1.jpg)
 

@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Witchica
+title: Jessica Strong
 email: jess@witchica.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jess is a technical designer currently working on a puzzle RPG that follows a witch on a 
-  quest to find a legendary potion. She has also worked on many other games and is currently
-  working as a Technical Designer in the games industry.
+  Jess is a technical designer currently working on Train Sim World 3 at Dovetail Games. In her spare time
+  she is currently working on a few ideas and seeing where things go, one of those ideas is a driving game
+  set in the Scottish Borders
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: witchicaa

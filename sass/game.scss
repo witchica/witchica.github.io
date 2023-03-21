@@ -13,61 +13,74 @@
     margin: 0 15vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
+    margin-top: 10px;
 
-    #text-space {
-        width: 60%;
-        padding: 15px;
-
-        img {
-            width: 25%;
-        }
-
-        ul {
-            margin: 5px 25px;
-        }
-        
-        p, ul {
-        line-height: 1.6em;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
+    .content-title, .content-subtitle {
+        margin-left: 15px;
     }
 
-    #media-space {
-        width: 40%;
-        padding: 15px;
-        text-align: left;
+    #information-space {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
 
-        .game-info-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 10px;
+        
+        #text-space {
+            width: 60%;
+            padding: 15px;
 
-            .game-info {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
+            img {
+                width: 25%;
+            }
+
+            ul {
+                margin: 5px 25px;
+            }
+            
+            p, ul {
+            line-height: 1.6em;
+            }
+
+            p {
                 margin-bottom: 15px;
-    
-                .game-info-header {
-                    font-weight: bold;
-                }
             }
         }
 
-        .game-media-header {
-            margin-bottom: 10px;
-        }
+        #media-space {
+            width: 40%;
+            padding: 15px;
+            text-align: left;
 
-        .game-media {
-            img, iframe {
-                width: 100%;
-                margin-bottom: 15px;
+            .game-info-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 10px;
+
+                .game-info {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+        
+                    .game-info-header {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .game-media-header {
+                margin-bottom: 10px;
+            }
+
+            .game-media {
+                img, iframe {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
@@ -129,4 +142,42 @@
             width: 80vw;
         }
     }
+}
+
+@media (max-width: 1600px) {
+    #content {
+        margin: 0 7.5vw;
+    }
+
+    #back-link {
+        margin: 0 7.5vw;
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #content {
+        margin: 0 0;
+
+        #information-space {
+            flex-direction: column;
+            width: 100%;
+
+            #text-space {
+                width: 100%;
+            }
+
+            #media-space {
+                width: 100%;
+            }
+        }
+    }
+
+    #back-link {
+        margin: 0 0vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
 }
