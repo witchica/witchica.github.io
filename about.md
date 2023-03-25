@@ -61,7 +61,7 @@ sections: [
         "text": "I got my first industry job! Working on Train Sim World has given me a very vast understanding of Unreal Engine and the Blueprint system. It also allowed me to lear how office roles operate and how teams communicate and work together. My main tasks so far have been setting up the rail vehicles for the game, which invovles a lot of 400 page manual and replicating systems in blueprint. It's super fun working on one of the games that I have played and learning how it goes together. Working remotely has been really interesting as well as I've developed a whole new work-life balance within my own home! This role has been super benificial in broadening my understanding of the game industry."
     },
     {
-        "image": "/assets/about/11.jpg",
+        "image": "/assets/about/14.jpg",
         "header": "March 2023",
         "text": "So, this is where I am right now! I'm currently working away at Dovetail on TSW, working on my ideas in my spare time and seeing what happens next! I'm super excited to be working on my own projects and I find it super exciting seeing what possibilities are out there. I can' wait to see what 2023 brings and what new things await me! Maybe there'll be another section about it on here soon! 🎉"
     }
