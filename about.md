@@ -1,8 +1,8 @@
 ---
 layout: about
 permalink: /about.html
-header-image: "/assets/about/12.jpg"
-custom-header-css: "background-position-y: 70%;"
+header-image: "/assets/about/16.jpg"
+custom-header-css: "background-position-y: 50%;"
 title: About Me
 sections: [
     {
@@ -64,6 +64,11 @@ sections: [
         "image": "/assets/about/14.jpg",
         "header": "March 2023",
         "text": "So, this is where I am right now! I'm currently working away at Dovetail on TSW, working on my ideas in my spare time and seeing what happens next! I'm super excited to be working on my own projects and I find it super exciting seeing what possibilities are out there. I can' wait to see what 2023 brings and what new things await me! Maybe there'll be another section about it on here soon! 🎉"
+    },
+    {
+        "image": "/assets/about/15.jpg",
+        "header": "July 2023",
+        "text": "Wow! So much happened in such a short amount of time... I now live in Brighton?! I got promoted at Dovetail to Technical Designer Level 1 and discovered that having hobbies is fun! I now work on video production and music projects in my free time instead of spending ALL of my time working on games! Jessica used Hobbies! It's Super Effective! Lame joke, I know. But seriously, burn out has been rough lately and having little things to do has really helped. I'm excited to see where video and music stuff takes me, all whilst working away at my tech design job!"
     }
 ]
 ---
