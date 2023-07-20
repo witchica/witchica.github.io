@@ -26,6 +26,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        color: $text-color;
 
         
         #text-space {
@@ -96,7 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 300px;
+    min-height: 40vh;
 
     h1, h2 {
         text-align: center;

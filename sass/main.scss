@@ -12,12 +12,14 @@
     font-family: $regular-font;
 }
 
-h1, h2, h3, h4, h5, h6, footer{
+h1, h2, h3, h4, h5, h6, footer, a{
     font-family: $header-font;
+    color: $text-color;
 }
 
 p {
     font-family: $regular-font;
+    color: $text-color;
 }
 
 html, body{
@@ -38,52 +40,47 @@ body {
 
 header {
     height: 100px;
-    background-color: $header-background;
+    width: 100vw;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     overflow: none;
-    z-index: 0;
+    z-index: 500;
     font-family: $title-font;
 
     #mobile-navigation-toggle {
         display: none;
     }
 
-    .header-centre {
+    .header-left {
         display: flex;
         flex-direction: row;
-        margin-right: 50px;
-
-        .header-image {
-            display: block;
-            width: 180px;
-            height: 100px;
-            background-image: url("/assets/pfp.png");
-            background-size: 180px 180px;
-            background-position: top;
-        }
+        margin-left: 50px;
 
         .header-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
             color: $header-font-color;
-            font-weight: 600;
-            font-size: 2.2em;
+            font-weight: 800;
+            font-size: 2.4em;
             margin-top: 5px;
             margin-left: 15px;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
 
             .header-subtext {
-                font-size: 0.4em;
+                font-size: 0.5em;
+                text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
             }
         }
     }
 
-    .header-links {
+    .header-right {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-right: 50px;
 
         a {
             text-align: center;
@@ -93,7 +90,9 @@ header {
             text-decoration: none;
             color: $header-link-color;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 900;
+            font-size: 1.2em;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
             transition: color 0.1s;
         }
 
@@ -112,25 +111,20 @@ footer {
     font-weight: bolder;
     text-align: center;
     height: 80px;
-    color: rgb(130 , 130, 130);
+    color: rgb(180,180,180);
 }
 
 #header-image {
     margin: 0 0;
-    min-height: 600px;
+    min-height: 800px;
     background-size: cover;
     background-position: center;
 }
 
 @media(max-width: 1000px) {
     header {
-        .header-centre {
-            .header-image {
-                margin-top: 25px;
-                width: 90px;
-                height: 50px;
-                background-size: 90px 90px;
-            }
+        .header-left {
+            margin-left: 25px;
 
             .header-text {
                 font-size: 1.5em;
@@ -146,6 +140,7 @@ footer {
             display: flex;
             flex-direction: column;
             margin-top: 25px;
+            margin-right: 25px;
             cursor: pointer;
 
             .line {
@@ -157,7 +152,7 @@ footer {
             }
         }
 
-        .header-links {
+        .header-right {
             display: none;
             flex-direction: column;
             justify-content: center;
@@ -166,12 +161,13 @@ footer {
             left: 0;
             right: 0;
             bottom: 0;
+            margin-right: 0;
             background-color: $site-background;
-            z-index: 900;
 
             a {
                 margin:0;
                 padding: 15px;
+                color: white;
             }
 
             a:hover {

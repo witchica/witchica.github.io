@@ -9,24 +9,31 @@
     </head>
     {% include header.html %}
     <body>
-        <div id="header-image" style="background-image: url({{page.header-image}})"></div>
-        <div id="content">
+        <div id="header-image" style="background: url({{page.header-image}}), rgba(0,0,0, 0.4);">
             <div id="introduction">
                 <h1>{{ page.introduction-header }}</h1>
-                <p> {{ page.introduction }} </p>
-                <div id="contact">
-                    <p>If you want to contact me, the best way is probably through Twitter or Email!</p>
-                    <span class="socials">
-                        <a href="https://twitter.com/{{site.twitter_username}}" class="social">
-                            <img src="/assets/icons/twitter.png"/>
-                            <span class="social-name">Twitter</span>
-                        </a>
-                        <a href="mailto:{{site.email}}" class="social">
-                            <img src="/assets/icons/email.png"/>
-                            <span class="social-name">Email Me!</span>
-                        </a>
-                    </span>
-                </div>
+                <p> {{ page.introduction }} </p><br>
+                <br>
+                <h2>Check out my most recent project!</h2>
+                <span class="game_container">
+                    {% for game in site.tags["professional"] limit:1 %}
+                        {% include components/game_card.html cover-image=game.cover-image title=game.title url=game.url %}
+                    {% endfor %}
+                </span>
+            </div>
+        </div>
+        <div id="content">
+            <div id="contact">
+                <span class="socials">
+                    <a href="https://twitter.com/{{site.twitter_username}}" class="social">
+                        <img src="/assets/icons/twitter.png"/>
+                        <span class="social-name">Twitter</span>
+                    </a>
+                    <a href="mailto:{{site.email}}" class="social">
+                        <img src="/assets/icons/email.png"/>
+                        <span class="social-name">Email Me!</span>
+                    </a>
+                </span>
             </div>
             
             {{ content }}

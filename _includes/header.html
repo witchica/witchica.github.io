@@ -1,12 +1,9 @@
 <header>
-    <span id="mobile-navigation-toggle">
-
-    </span>
-    <span class="header-centre">
+    <span class="header-left">
         <span class="header-image"></span>
         <span class="header-text">{{site.title}}<span class="header-subtext">Technical Designer</span></span>
     </span>
-    <span class="header-links">
+    <span class="header-right">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="https://linktr.ee/witchica">LinkTree</a>
@@ -19,7 +16,7 @@
     <script>
         let linksShown = false;
         function toggleLinks() {
-            let links = document.getElementsByClassName('header-links')[0];
+            let links = document.getElementsByClassName('header-right')[0];
 
             linksShown = !linksShown;
             links.style = linksShown ? "display: flex;" : "display: none;";

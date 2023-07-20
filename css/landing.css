@@ -1,92 +1,199 @@
-#introduction {
+#content #contact .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#content #contact .socials .social {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 50px;
+  margin-bottom: 0;
+  color: rgb(254, 255, 241);
+}
+#content #contact .socials .social img {
+  width: 70px;
+  filter: invert(1);
+}
+#content #contact .socials .social .social-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+header {
+  justify-content: flex-end;
+}
+header .header-left {
+  display: none;
+}
+
+#header-image {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-blend-mode: overlay;
+  background-size: cover !important;
+  background-position: center !important;
+}
+#header-image #introduction {
   width: 50vw;
+  margin-left: 25vw;
   text-align: center;
-  margin: 90px 25vw; }
-  #introduction h1 {
-    margin-bottom: 25px; }
-  #introduction p {
-    font-size: 1.4em; }
-  #introduction #contact .socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    #introduction #contact .socials .social {
-      display: flex;
-      flex-direction: row;
-      margin: 15px 50px;
-      margin-bottom: 0;
-      color: black; }
-      #introduction #contact .socials .social img {
-        width: 70px; }
-      #introduction #contact .socials .social .social-name {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 10px; }
+}
+#header-image #introduction h1 {
+  font-weight: 900;
+  font-size: 3em;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
+}
+#header-image #introduction p {
+  font-weight: 600;
+  font-size: 1.4em;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
+}
+#header-image #introduction h2 {
+  font-size: 2em;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
+}
+#header-image #introduction .game_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#header-image #introduction .game_container .game {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  transform: scale(1);
+  transition: transform 0.1s;
+}
+#header-image #introduction .game_container .game img {
+  width: 10vw;
+  margin-right: 15px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.93);
+}
+#header-image #introduction .game_container .game h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.93);
+}
+#header-image #introduction .game_container .game:hover {
+  transform: scale(1.02);
+}
 
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 #content {
-  min-height: calc(100vh - 180px); }
+  min-height: calc(100vh - 180px);
+}
 
 .game-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 25px; }
-  .game-list .game {
-    display: flex;
-    flex-direction: column;
-    display: block;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    margin: 10px 15px;
-    transition: transform 0.1s; }
-    .game-list .game h2 {
-      margin-top: 10px; }
-    .game-list .game img {
-      width: 23vw; }
-  .game-list .game:hover {
-    transform: scale(1.01); }
+  margin-bottom: 25px;
+}
+.game-list .game {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  color: rgb(254, 255, 241);
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 15px;
+  transition: transform 0.1s;
+}
+.game-list .game h2 {
+  margin-top: 10px;
+}
+.game-list .game img {
+  width: 23vw;
+}
+.game-list .game:hover {
+  transform: scale(1.01);
+}
 
 @media (max-width: 1600px) {
   #introduction {
     width: 80vw;
-    margin: 90px 10vw; }
-
+    margin: 90px 10vw;
+  }
   .game-list .game img {
-    width: 40vw; } }
+    width: 40vw;
+  }
+}
 @media (max-width: 1000px) {
-  #header-image {
-    min-height: 300px; }
-
-  #introduction {
+  #header-image #introduction {
     width: 95vw;
-    margin: 30px 2.5vw; }
-    #introduction #contact {
-      margin-top: 15px; }
-      #introduction #contact .socials {
-        display: flex;
-        flex-direction: column; }
-        #introduction #contact .socials .social {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          margin: 15px 50px;
-          margin-bottom: 0;
-          color: black; }
-          #introduction #contact .socials .social img {
-            width: 70px; }
-          #introduction #contact .socials .social .social-name {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 10px; }
-
+    margin-left: 2.5vw;
+    margin-top: 100px;
+  }
+  #header-image #introduction h1 {
+    font-size: 2em;
+  }
+  #header-image #introduction p {
+    font-size: 1.2em;
+  }
+  #header-image #introduction h2 {
+    font-size: 1.5em;
+  }
+  #header-image #introduction .game_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #header-image #introduction .game_container .game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    transform: scale(1);
+    transition: transform 0.1s;
+  }
+  #header-image #introduction .game_container .game img {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header-image #introduction .game_container .game h2 {
+    text-align: center;
+    margin-top: 5px;
+  }
+  #contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #contact .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #contact .socials .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 !important;
+    color: rgb(254, 255, 241);
+    width: 100%;
+  }
+  #contact .socials .social img {
+    width: 50px;
+  }
+  #contact .socials .social .social-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
   .game-list .game img {
-    width: 90vw; } }
+    width: 90vw;
+  }
+}
 
 /*# sourceMappingURL=landing.css.map */
