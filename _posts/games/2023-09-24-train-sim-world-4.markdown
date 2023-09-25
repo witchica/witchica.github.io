@@ -6,7 +6,7 @@ tag: professional
 cover-image: "/assets/games/tsw-4/alv-1.jpg"
 custom-header-css: "background-position-y: 60%;"
 
-videos: []
+videos: ['<iframe width="540" height="360" src="https://www.youtube.com/embed/8RbDtcfNcKA?si=K4GJrOK26ZWEqYVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>']
 photos: ["/assets/games/tsw-4/ecml-1.jpg", "/assets/games/tsw-4/ecml-2.jpg", "/assets/games/tsw-4/alv-1.jpg", "/assets/games/tsw-4/alv-2.jpg", "/assets/games/tsw-4/alv-3.jpg"]
 photos_alt: ["","","",""]
 
