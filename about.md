@@ -68,7 +68,7 @@ sections: [
     {
         "image": "/assets/about/17.jpg",
         "header": "July 2023",
-        "text": "Wow! So much happened in such a short amount of time... I now live in Brighton?! I got promoted at Dovetail to Technical Designer Level 1 and discovered that having hobbies is fun! I now work on video production and music projects in my free time instead of spending ALL of my time working on games! Jessica used Hobbies! It's Super Effective! Lame joke, I know. But seriously, burn out has been rough lately and having little things to do has really helped. I'm excited to see where video and music stuff takes me, all whilst working away at my tech design job!"
+        "text": "Wow! So much happened in such a short amount of time... I now live in the South of England?! I got promoted at Dovetail to Technical Designer Level 1 and discovered that having hobbies is fun! I now work on video production and music projects in my free time instead of spending ALL of my time working on games! Jessica used Hobbies! It's Super Effective! Lame joke, I know. But seriously, burn out has been rough lately and having little things to do has really helped. I'm excited to see where video and music stuff takes me, all whilst working away at my tech design job!"
     }
 ]
 ---
