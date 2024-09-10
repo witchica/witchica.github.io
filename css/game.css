@@ -116,6 +116,15 @@
   #content #media-space .game-media iframe {
     height: 540px;
   }
+  #header-image h1 {
+    font-size: 2em;
+  }
+  #header-image h2 {
+    font-size: 1.2em;
+  }
+  #header-image span {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=game.css.map */
