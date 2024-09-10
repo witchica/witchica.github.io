@@ -1,6 +1,7 @@
 <header>
     <span class="header-left">
-        <span class="header-text"><a href="/index.html">JESSICA STRONG</a></span>
+        <span class="header-image"></span>
+        <span class="header-text">JESSICA STRONG</span>
     </span>
     <span class="header-links">
         <a href="/index.html">HOME</a>
@@ -8,6 +9,9 @@
         <a href="/personal.html">PERSONAL WORK</a>
         <a href="/minecraft.html">MINECRAFT</a>
         <a href="/contact.html">CONTACT</a>
+    </span>
+    <span class="header-right">
+        
     </span>
     <span id="mobile-navigation-toggle" onclick="toggleLinks()">
         <span class="line"></span>
@@ -17,10 +21,10 @@
     <script>
         let linksShown = false;
         function toggleLinks() {
-            let links = document.getElementsByClassName('header-links')[0];
+            let links = document.getElementsByClassName('header-right')[0];
 
             linksShown = !linksShown;
-            links.style = linksShown ? "display: flex" : "display: none";
+            links.style = linksShown ? "display: flex;" : "display: none;";
         }
     </script>
 </header>

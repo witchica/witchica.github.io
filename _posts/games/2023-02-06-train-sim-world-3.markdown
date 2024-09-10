@@ -20,7 +20,6 @@ play_custom_text: "Steam"
 play_link: "https://store.steampowered.com/app/1944790/Train_Sim_World_3/"
 
 projects: [
-    {name: "Unreleased DLC..."},
     {name: "Train Sim World® 3: Thameslink BR Class 700", link: "https://store.steampowered.com/app/2182350/Train_Sim_World_3_Thameslink_BR_Class_7000_EMU_AddOn/"},
     {name: "Train Sim World® 3: Linke Rheinstrecke: Mainz - Koblenz", link: "https://store.steampowered.com/app/2101401/Train_Sim_World_3_Linke_Rheinstrecke_Mainz__Koblenz_Route_AddOn/"},
     {name: "Train Sim World® 3: Northeast Corridor: New York - Trenton", link: "https://store.steampowered.com/app/2182370/Train_Sim_World_3_Northeast_Corridor_New_York__Trenton/"},

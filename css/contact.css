@@ -1,0 +1,35 @@
+#list_title {
+  width: 100vw;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+#list_title h1 {
+  font-family: "Titillium Web";
+  color: white;
+  font-size: 2.5em;
+}
+
+#container {
+  min-height: calc(100vh - 180px);
+}
+#container #content {
+  text-align: center;
+  font-size: 1.3em;
+  width: 50%;
+  margin-left: 25%;
+}
+
+@media (max-width: 1600px) {
+  #container #content {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

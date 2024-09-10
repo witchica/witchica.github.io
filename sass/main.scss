@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 @import 'variables.scss';
 
@@ -13,8 +14,9 @@
 }
 
 h1, h2, h3, h4, h5, h6, footer, a{
-    font-family: $header-font;
+    font-family: $title-font;
     color: $text-color;
+    font-weight: 500;
 }
 
 p {
@@ -32,7 +34,6 @@ body {
 }
 
 #content {
-    min-height: calc(100vh - 180px);
     position: relative;
     background-color: $site-background;
     z-index: 200;
@@ -41,13 +42,14 @@ body {
 header {
     height: 100px;
     width: 100vw;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow: none;
     z-index: 500;
     font-family: $title-font;
+    background-color: $header-background;
 
     #mobile-navigation-toggle {
         display: none;
@@ -56,31 +58,33 @@ header {
     .header-left {
         display: flex;
         flex-direction: row;
-        margin-left: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
 
         .header-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
             color: $header-font-color;
-            font-weight: 800;
-            font-size: 2.4em;
-            margin-top: 5px;
+            font-weight: 400;
+            font-size: 2em;
             margin-left: 15px;
-            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
+            font-family: $title-font;
 
-            .header-subtext {
-                font-size: 0.5em;
-                text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.93);
+            a {
+                text-decoration: none;
             }
         }
     }
 
-    .header-right {
+    .header-links {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
         margin-right: 50px;
+        font-family: $title-font;
+        width: 75%;
+        flex-grow: 1;
 
         a {
             text-align: center;
@@ -89,18 +93,22 @@ header {
             margin-bottom: auto;
             text-decoration: none;
             color: $header-link-color;
+            font-family: $title-font;
             cursor: pointer;
-            font-weight: 900;
+            font-weight: 300;
             font-size: 1.2em;
-            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
             transition: color 0.1s, text-decoration 0.2s;
         }
 
         a:hover {
-            font-weight: 600;
+            font-weight: 400;
             color: $header-link-color-hover;
-            text-decoration: underline;
         }
+    }
+
+    .header-right {
+        
+        width: 25%;
     }
 }
 
@@ -122,58 +130,67 @@ footer {
     background-position: center;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1900px) {
     header {
         .header-left {
-            margin-left: 25px;
 
             .header-text {
-                font-size: 1.5em;
-                margin-left: 5px;
-                .header-subtext {
-                    font-size: 0.5em;
-                }
+                font-size: 1.4em;
             }
         }
 
-        
+        .header-links {
+            font-size: .9em;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    header {
+        justify-content: space-between;
+        position: fixed;
+        top:0;
+        .header-left {
+            position: fixed;
+            top: 0;
+            height: 100px;
+            .header-text {
+                font-size: 1.4em;
+            }
+            
+        }
+
         #mobile-navigation-toggle {
             display: flex;
             flex-direction: column;
-            margin-top: 25px;
-            margin-right: 25px;
+            justify-content: space-between;
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            z-index: 100;
+            width: 50px;
+            height: 50px;
             cursor: pointer;
+            
 
             .line {
-                border: 2px solid $text-color;
-                border-radius: 2px;
-                width: 50px;
-                height: 0px;
-                margin-bottom: 16px;
+                height: 5px;
+                background-color: black;
             }
         }
 
-        .header-right {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
+        .header-links {
             position: fixed;
+            display: none;
             top: 100px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin-right: 0;
-            background-color: $site-background;
-
-            a {
-                margin:0;
-                padding: 15px;
-                color: white;
-            }
-
-            a:hover {
-                background-color: $header-link-color-hover;
-            }
+            height: calc(100vh - 100px);
+            background-color: $header-background;
+            width: 100%;
+            flex-direction: column;
         }
+    }
+
+    body {
+        margin-top: 100px;
     }
 }
