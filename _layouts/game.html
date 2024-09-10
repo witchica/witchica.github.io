@@ -14,9 +14,10 @@
         {% else %}
         <div id="header-image" style="background-image: url({{page.cover-image}}); {{page.custom-header-css}}">
         {% endif %}
-        <span class="page-location"><a href="/index.html">Home</a> / <a href="/{{ page.tag }}.html">{% if page.tag == "personal" %} Personal {% else %} Professional {% endif %}</a></span>
+        <span class="page-location"><a href="/index.html">Home</a> / <a href="/{{ page.tag }}.html">{% 
+            if page.tag == "personal" %} Personal {% elsif page.tag == "minecraft" %} Minecraft {% else %} Professional {% endif %}</a></span>
         <h1>{{ page.title }}</h1>
-        <h2>{% if page.tag == "personal" %} Personal Work {% else %} Professional Work {% endif %}</h2>
+        <h2>{% if page.tag == "personal" %} Personal Work {% elsif page.tag =="minecraft" %} Minecraft {% else %} Professional Work {% endif %}</h2>
         </div>
         <div id="content">
             <h2>Project Details</h2>
