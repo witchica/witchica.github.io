@@ -21,9 +21,7 @@
 title: Jessica Strong
 email: jess@witchica.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jess is a technical designer currently working on Train Sim World 3 at Dovetail Games. In her spare time
-  she is currently working on a few ideas and seeing where things go, one of those ideas is a driving game
-  set in the Scottish Borders
+  I'm a Technical Deisgner currently working on the Train Sim World franchies at Dovetail Games.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: witchicaa
