@@ -4,7 +4,7 @@
 
 layout: landing
 title: Home
-header-image: "/assets/games/tsw-5/wcml-1.jpg"
+header-image: "/assets/games/tsw-4/gcc-2.jpg"
 introduction-header: Hi there! My name is Jess and I'm a Technical Designer.
 introduction: "I'm currently working at Dovetail Games on the Train Sim World franchise as part of the Rail Vehicle Setup team. My role involves setting up vehicles alongside all of their systems. This is achieved by researching their real-world systems, documenting them and implementing them within Unreal Engine. This role has taught me a lot about working in industry and allowed me to expand my technical design abilities whilst developing my Unreal Engine abilities.
 <br><br>
